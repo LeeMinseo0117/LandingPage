@@ -83,7 +83,7 @@ li button {
 .banner-wrap2 p {
   font-weight: 400;
   font-size: 16px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .banner-wrap2 button {
   width: 140px;
@@ -316,6 +316,9 @@ li button {
 }
 /* width:1400px에서 크기 변경 */
 @media (max-width: 1400px) {
+  .section1 {
+    gap: 50px;
+  }
   .section3 {
     overflow: hidden;
   }
@@ -336,18 +339,151 @@ li button {
   .wrap4 button {
     left: 325px;
   }
-  .section1 {
-    gap: 50px;
-  }
   .section4 span {
     text-align: center;
   }
 }
 /* 태블릿 */
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-width: portrait) {
   .margin1,
   .margin2,
   .margin3 {
     max-width: calc(100% - 100px);
+  }
+  .margin4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-wrap2 {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-wrap2 h2 {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .banner-wrap2 p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .margin4 img {
+    width: 197px;
+    height: 422px;
+    margin-bottom: -70px;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 h2 {
+    font-size: 24px;
+    padding-top: 40px;
+  }
+  .section1 p {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  .section2 {
+    margin-top: 40px;
+  }
+  .section2 h2 {
+    font-size: 24px;
+  }
+  .section2 p {
+    font-size: 16px;
+  }
+  .section4 p {
+    font-size: 16px;
+  }
+  .container {
+    width: 600px;
+    height: 200px;
+  }
+  .wrap3 {
+    padding-left: 50px;
+  }
+  .wrap4 {
+    padding-right: 30px;
+  }
+  .wrap4 input {
+    width: 200px;
+    margin: auto;
+  }
+  .wrap4 button {
+    position: static;
+  }
+  .section4 span {
+    text-align: center;
+  }
+}
+/* width:700px에서 크기 변경 */
+@media (max-width: 700px) {
+  .section1 img {
+    width: 600px;
+    height: 352px;
+  }
+  .section3 img {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 600px) {
+  .section1 img {
+    width: 500px;
+    height: 294px;
+  }
+  .container {
+    width: 400px;
+    height: 350px;
+    transform: translate(0%, -40%);
+    flex-direction: column;
+  }
+  .wrap3 {
+    padding-left: 50px;
+    padding: 0 32px 0 32px;
+    margin-bottom: 30px;
+  }
+  .wrap3 h2 {
+    font-size: 24px;
+  }
+  .wrap3 p {
+    font-size: 14px;
+  }
+  .wrap4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .wrap4 input {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .wrap4 button {
+    position: static;
+  }
+  .section4 span {
+    text-align: center;
+  }
+}
+/* 모바일 */
+@media (max-width: 425px) {
+  .margin1,
+  .margin2,
+  .margin3,
+  .margin4 {
+    max-width: calc(100% - 64px);
+    margin: auto;
+  }
+  .margin1 nav {
+    padding: 24px;
+  }
+  .banner-wrap2 {
+    padding: 0 40px 0 40px;
   }
 }
