@@ -19,16 +19,35 @@ body {
 header,
 main,
 .banner-wrap1,
+.section1,
+.section2,
 footer {
   width: 100%;
 }
 .margin1,
-.margin2,
 .margin3,
-.margin4 {
-  max-width: calc(100% - 320px);
-  margin: auto;
+.margin4,
+footer {
+  /* max-width: calc(100% - 320px);
+  margin: auto; */
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 32px;
 }
+header,
+.banner-wrap1,
+.footer-wrap,
+.section5-wrap {
+  display: flex;
+  justify-content: center;
+}
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 header,
 .banner-wrap1 {
   background-color: #f2e9d8;
@@ -102,6 +121,7 @@ li button {
   gap: 110px;
 }
 .section1 h2 {
+  width: 510px;
   font-weight: 700;
   font-size: 36px;
   padding-bottom: 40px;
@@ -150,7 +170,6 @@ li button {
   justify-content: center;
   align-items: center;
   margin-top: 90px;
-  margin-bottom: 190px;
 }
 .section4 span {
   display: block;
@@ -171,18 +190,16 @@ li button {
   font-weight: 700;
 }
 .section5 {
-  background: linear-gradient(
-      0deg,
-      rgba(242, 233, 216, 0.6) 0%,
-      rgba(242, 233, 216, 0.6) 100%
-    ),
-    url("./src/img_5.jpg");
-  background-position: 40% 40%;
-  background-size: cover;
-  height: 340px;
+  background-color: #263140;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 32px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 30px;
+  transform: translateY(100px);
 }
 .wrap3 h2 {
   color: var(--white-color);
@@ -231,6 +248,17 @@ li button {
   background-color: #263140;
   transform: translate(0%, -90%);
 }
+.section6 {
+  height: 340px;
+  background: linear-gradient(
+      0deg,
+      rgba(242, 233, 216, 0.6) 0%,
+      rgba(242, 233, 216, 0.6) 100%
+    ),
+    url("./src/img_5.jpg");
+  background-position: 40% 40%;
+  background-size: cover;
+}
 .margin3 {
   margin-top: 45px;
   margin-bottom: 45px;
@@ -253,6 +281,7 @@ li button {
   border-radius: 90%;
   margin-right: 20px;
 }
+
 #modalOpenButton,
 #modalCloseButton {
   cursor: pointer;
@@ -343,6 +372,18 @@ li button {
     text-align: center;
   }
 }
+/* width:1024px 크기 조절 */
+@media (max-width: 1024px) {
+  .wrap3 h2 {
+    font-size: 30px;
+  }
+  .section1 {
+    gap: 30px;
+  }
+  .margin3 .logo {
+    width: 150px;
+  }
+}
 /* 태블릿 */
 @media (max-width: 768px), (max-width: portrait) {
   .margin1,
@@ -408,6 +449,9 @@ li button {
   }
   .wrap4 {
     padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   .wrap4 input {
     width: 200px;
@@ -415,6 +459,7 @@ li button {
   }
   .wrap4 button {
     position: static;
+    align-self: flex-end;
   }
   .section4 span {
     text-align: center;
@@ -472,7 +517,7 @@ li button {
   }
 }
 /* 모바일 */
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .margin1,
   .margin2,
   .margin3,
@@ -485,5 +530,49 @@ li button {
   }
   .banner-wrap2 {
     padding: 0 40px 0 40px;
+  }
+  .section1 img {
+    width: 326px;
+  }
+  .section1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section1 h2 {
+    width: 326px;
+    text-align: center;
+  }
+  .section1 p {
+    width: 326px;
+    text-align: center;
+  }
+  .section3 {
+    justify-content: start;
+    margin-left: 32px;
+  }
+  .section3 img {
+    width: 260px;
+  }
+  .section4 {
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 32px;
+  }
+  .section4 button {
+    align-self: flex-end;
+    margin-right: 32px;
+  }
+  .section5 {
+    width: 326px;
+    height: 348px;
+    flex-direction: column;
+  }
+  .section5 input {
+    margin: 0;
+  }
+  .youtube {
+    margin: 0;
   }
 }
