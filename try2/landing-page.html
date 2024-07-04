@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HODU</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./landing-page.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="../src/logo.svg" alt="HODU" />
+      </h1>
+      <ul class="menu-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Support</a></li>
+        <li><button type="button">Download</button></li>
+      </ul>
+    </header>
+    <main>
+      <section class="banner">
+        <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown
+        </p>
+        <button type="button">Download</button>
+        <img src="../src/box-cat.png" alt="" />
+      </section>
+      <section class="first-content">
+        <img src="../src/img_4.jpg" alt="" />
+        <h2>Lorem Ipsum is simply dummy text of the printing and dummy text</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </section>
+      <section class="second-content">
+        <h2>dummy text of the printing and dummy</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown
+        </p>
+        <ul class="img-list">
+          <li><img src="../src/img_1.jpg" alt="" /></li>
+          <li><img src="../src/img_2.jpg" alt="" /></li>
+          <li><img src="../src/img_3.jpg" alt="" /></li>
+        </ul>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown Ipsum is simply dummy text of the
+          printing and typesetting industry.
+        </p>
+        <button type="button">Learn More</button>
+      </section>
+      <section class="Subscribe">
+        <h2>Subscribe to our Blog post</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+        </p>
+        <form action="post" action="">
+          <input type="email" />
+          <button type="button">Subscribe</button>
+        </form>
+      </section>
+      <section class="bg-img"></section>
+    </main>
+    <footer>
+      <img src="../src/logo.svg" alt="HODU" />
+      <ul>
+        <li>
+          <a href="#"><img src="../src/blog.svg" alt="블로그로 이동" /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="../src/instagram.svg" alt="인스타그램으로 이동"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="../src/facebook.svg" alt="페이스북으로 이동"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="../src/youtube.svg" alt="유튜브로 이동" /></a>
+        </li>
+      </ul>
+    </footer>
+    <button><img src="../src/top-btn.svg" alt="" /></button>
+    <section id="modalContainer" class="hidden">
+      <div id="modalContent">
+        <img src="./src/cat-subscribe.png" alt="" />
+        <h2>Thank you!</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+        <button class="modal-btn" id="modalCloseButton" type="button">
+          OK! I Love HODU
+        </button>
+      </div>
+    </section>
+  </body>
+  <script>
+    const modalOpenButton = document.getElementById("modalOpenButton");
+    const modalCloseButton = document.getElementById("modalCloseButton");
+    const modal = document.getElementById("modalContainer");
+
+    modalOpenButton.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+
+    modalCloseButton.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+  </script>
+</html>
