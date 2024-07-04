@@ -9,93 +9,124 @@
   </head>
   <body>
     <header>
-      <h1>
-        <img src="../src/logo.svg" alt="HODU" />
-      </h1>
-      <ul class="menu-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Support</a></li>
-        <li><button type="button">Download</button></li>
-      </ul>
+      <div class="header">
+        <h1>
+          <a href=""><img class="logo" src="../src/logo.svg" alt="HODU" /></a>
+        </h1>
+        <nav>
+          <ul class="menu-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+            <li>
+              <button class="download-btn" type="button">Download</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="banner">
-        <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown
-        </p>
-        <button type="button">Download</button>
-        <img src="../src/box-cat.png" alt="" />
-      </section>
+      <div class="banner-bg">
+        <section class="banner">
+          <div class="banner-text">
+            <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown
+            </p>
+            <button class="download-btn" type="button">Download</button>
+          </div>
+          <img src="../src/box-cat.png" alt="" />
+        </section>
+      </div>
       <section class="first-content">
         <img src="../src/img_4.jpg" alt="" />
-        <h2>Lorem Ipsum is simply dummy text of the printing and dummy text</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
+        <div>
+          <h2>
+            Lorem Ipsum is simply dummy text of the printing and dummy text
+          </h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
       </section>
       <section class="second-content">
-        <h2>dummy text of the printing and dummy</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown
-        </p>
+        <div class="second-content-text">
+          <h2>dummy text of the printing and dummy</h2>
+          <p>
+            Lorem Ipsum is simply <span>dummy text</span> of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown
+          </p>
+        </div>
         <ul class="img-list">
           <li><img src="../src/img_1.jpg" alt="" /></li>
           <li><img src="../src/img_2.jpg" alt="" /></li>
           <li><img src="../src/img_3.jpg" alt="" /></li>
         </ul>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown Ipsum is simply dummy text of the
-          printing and typesetting industry.
-        </p>
-        <button type="button">Learn More</button>
+        <div class="learnMore">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown Ipsum is simply dummy text of
+            the printing and typesetting industry.
+          </p>
+          <button type="button">Learn More</button>
+        </div>
       </section>
-      <section class="Subscribe">
-        <h2>Subscribe to our Blog post</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-        </p>
-        <form action="post" action="">
-          <input type="email" />
-          <button type="button">Subscribe</button>
-        </form>
+      <section class="subscribe">
+        <div class="subscribe-box">
+          <div>
+            <h2>Subscribe to our Blog post</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+          </div>
+          <form action="post" action="">
+            <label for="emailAddr" class="sr-only">이메일 입력창</label
+            ><input
+              id="emailAddr"
+              type="email"
+              placeholder="Enter your e-mail address"
+            />
+            <button type="submit" id="modalOpenButton">Subscribe</button>
+          </form>
+        </div>
       </section>
       <section class="bg-img"></section>
     </main>
     <footer>
-      <img src="../src/logo.svg" alt="HODU" />
-      <ul>
-        <li>
-          <a href="#"><img src="../src/blog.svg" alt="블로그로 이동" /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img src="../src/instagram.svg" alt="인스타그램으로 이동"
-          /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img src="../src/facebook.svg" alt="페이스북으로 이동"
-          /></a>
-        </li>
-        <li>
-          <a href="#"><img src="../src/youtube.svg" alt="유튜브로 이동" /></a>
-        </li>
-      </ul>
+      <div class="footer-wrap">
+        <img class="logo" src="../src/logo.svg" alt="HODU" />
+        <ul>
+          <li>
+            <a href="#"><img src="../src/blog.svg" alt="블로그로 이동" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="../src/instagram.svg" alt="인스타그램으로 이동"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="../src/facebook.svg" alt="페이스북으로 이동"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../src/youtube.svg" alt="유튜브로 이동" /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-    <button><img src="../src/top-btn.svg" alt="" /></button>
+    <button type="button" class="top-btn">
+      <img src="../src/top-btn.svg" alt="맨 위로 올리는 버튼" />
+    </button>
     <section id="modalContainer" class="hidden">
       <div id="modalContent">
-        <img src="./src/cat-subscribe.png" alt="" />
+        <img src="../src/cat-subscribe.png" alt="" />
         <h2>Thank you!</h2>
         <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
         <button class="modal-btn" id="modalCloseButton" type="button">
@@ -109,8 +140,9 @@
     const modalCloseButton = document.getElementById("modalCloseButton");
     const modal = document.getElementById("modalContainer");
 
-    modalOpenButton.addEventListener("click", () => {
+    modalOpenButton.addEventListener("click", function (event) {
       modal.classList.remove("hidden");
+      event.preventDefault();
     });
 
     modalCloseButton.addEventListener("click", () => {

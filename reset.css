@@ -140,7 +140,3 @@ button {
   font: inherit; /* 부모 요소의 글꼴 상속 */
   cursor: pointer; /* 포인터 커서 표시 */
 }
-body {
-  color: #000000;
-  font-family: "SpoqaHanSansNeo-Regular";
-}
